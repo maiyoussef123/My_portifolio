@@ -1,0 +1,78 @@
+/* خلفية الصفحة كاملة ونص أبيض */
+body {
+  background-color: #000000; /* أسود كامل */
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* الكاردات سوداء بالكامل */
+.movie-card {
+  background-color: #000000; /* أسود كامل بدل الجريدينت */
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  border: 1px solid #222; /* إطار خفيف عشان يظهر */
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(255,255,255,0.1); /* ظل فاتح شوي */
+  z-index: 2;
+}
+
+/* الصورة */
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.6s ease, filter 0.4s ease;
+}
+
+.movie-card:hover .card-img-top {
+  transform: scale(1.1);
+  filter: brightness(0.7); /* تعتيم الصورة عند hover */
+}
+
+/* ريت التقييم */
+.rate-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: bold;
+  color: #fff;
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.rate-high { background-color: #2ecc71; }
+.rate-medium { background-color: #f1c40f; color: #000; }
+.rate-low { background-color: #e74c3c; }
+
+/* جسم الكارد */
+.card-body {
+  padding: 12px;
+  background-color: #000000; /* أسود كامل */
+  color: #fff;
+  min-height: 150px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 0.85rem;
+  color: #ccc;
+  line-height: 1.4;
+}

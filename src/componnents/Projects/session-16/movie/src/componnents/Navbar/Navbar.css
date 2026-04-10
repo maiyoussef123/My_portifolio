@@ -1,0 +1,8 @@
+.cl-danger {
+  color: #e74c3c; /* أحمر */
+  font-weight: bold;
+}
+.cl-primary {
+  color: #3498db; /* أزرق */
+  font-weight: bold;
+}

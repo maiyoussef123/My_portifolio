@@ -1,0 +1,36 @@
+.contact-section {
+  min-height: 80vh;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #f0ad4e;
+  box-shadow: 0 0 5px #f0ad4e;
+}
+
+.button {
+  background-color: #f0ad4e;
+  color: #000;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #e0943c;
+  color: #fff;
+}

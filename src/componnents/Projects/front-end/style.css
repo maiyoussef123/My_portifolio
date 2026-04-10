@@ -1,0 +1,76 @@
+
+/* إزالة الهوامش العامة */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+  overflow-x: hidden;
+}
+
+/*  إعدادات الفيديو الخلفي */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* يخلي الفيديو يملأ الشاشة */
+  z-index: -1; /* يخليه ورا المحتوى */
+  filter: brightness(60%); /* يغمق الخلفية شوي عشان الكلام يبان */
+}
+
+/*  محتوى المنيو */
+.menu-section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.menu-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.menu-section h1 span {
+  color: #ffdd55; /* لون مميز للحرف */
+}
+
+.menu-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.menu-item {
+  background: rgba(255, 255, 255, 0.15); /* شفاف عشان الفيديو باين */
+  border-radius: 15px;
+  padding: 15px;
+  width: 220px;
+  backdrop-filter: blur(5px); /* تأثير زجاج خفيف */
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.menu-item h2 {
+  margin: 10px 0 5px;
+}
+
+.menu-item p {
+  font-size: 0.9em;
+  color: #f1f1f1;
+}
+
+.price {
+  display: block;
+  margin-top: 5px;
+  color: #ffdd55;
+  font-weight: bold;
+}
